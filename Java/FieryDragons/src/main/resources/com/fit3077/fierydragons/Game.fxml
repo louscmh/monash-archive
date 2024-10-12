@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="gamePane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.fit3077.fierydragons.GameController">
+   <children>
+      <ScrollPane fx:id="volcanoScrollPane" layoutX="64.0" layoutY="65.0">
+         <content>
+            <Group fx:id="volcanoAndCavesGroup">
+               <children>
+                  <Group fx:id="volcanoGroup" layoutX="70.0" layoutY="70.0">
+                     <children>
+                        <Group fx:id="topSideVolcanoCardGroup" />
+                        <Group fx:id="rightSideVolcanoCardGroup" />
+                        <Group fx:id="bottomSideVolcanoCardGroup" />
+                        <Group fx:id="leftSideVolcanoCardGroup" />
+                     </children>
+                  </Group>
+                  <ImageView fx:id="cave1ImageView" fitHeight="70.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@BabyDragonCave.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="cave2ImageView" fitHeight="70.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@SpiderCave.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="cave3ImageView" fitHeight="70.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@SalamanderCave.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="cave4ImageView" fitHeight="70.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@BatCave.png" />
+                     </image>
+                  </ImageView>
+                  <Circle fx:id="player1Circle" fill="#01ff00" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fx:id="player2Circle" fill="#ffd966" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fx:id="player3Circle" fill="WHITE" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fx:id="player4Circle" fill="#4a86e8" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+               </children>
+            </Group>
+         </content>
+      </ScrollPane>
+      <Group fx:id="dragonCardGroup" layoutX="859.0" layoutY="343.0">
+         <children>
+            <ImageView fx:id="dragonCard1" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#flipDragonCard" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@FaceDownDragonCard.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="dragonCard2" fitHeight="40.0" fitWidth="40.0" layoutX="70.0" onMouseClicked="#flipDragonCard" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@FaceDownDragonCard.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="dragonCard3" fitHeight="40.0" fitWidth="40.0" layoutX="140.0" onMouseClicked="#flipDragonCard" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@FaceDownDragonCard.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="dragonCard4" fitHeight="40.0" fitWidth="40.0" layoutX="210.0" onMouseClicked="#flipDragonCard" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@FaceDownDragonCard.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="dragonCard5" fitHeight="40.0" fitWidth="40.0" layoutY="70.0" onMouseClicked="#flipDragonCard" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@FaceDownDragonCard.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="dragonCard6" fitHeight="40.0" fitWidth="40.0" layoutX="70.0" layoutY="70.0" onMouseClicked="#flipDragonCard" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@FaceDownDragonCard.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="dragonCard7" fitHeight="40.0" fitWidth="40.0" layoutX="140.0" layoutY="70.0" onMouseClicked="#flipDragonCard" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@FaceDownDragonCard.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="dragonCard8" fitHeight="40.0" fitWidth="40.0" layoutX="210.0" layoutY="70.0" onMouseClicked="#flipDragonCard" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@FaceDownDragonCard.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="dragonCard9" fitHeight="40.0" fitWidth="40.0" layoutY="140.0" onMouseClicked="#flipDragonCard" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@FaceDownDragonCard.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="dragonCard10" fitHeight="40.0" fitWidth="40.0" layoutX="70.0" layoutY="140.0" onMouseClicked="#flipDragonCard" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@FaceDownDragonCard.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="dragonCard11" fitHeight="40.0" fitWidth="40.0" layoutX="140.0" layoutY="140.0" onMouseClicked="#flipDragonCard" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@FaceDownDragonCard.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="dragonCard12" fitHeight="40.0" fitWidth="40.0" layoutX="210.0" layoutY="140.0" onMouseClicked="#flipDragonCard" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@FaceDownDragonCard.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="dragonCard13" fitHeight="40.0" fitWidth="40.0" layoutY="210.0" onMouseClicked="#flipDragonCard" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@FaceDownDragonCard.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="dragonCard14" fitHeight="40.0" fitWidth="40.0" layoutX="70.0" layoutY="210.0" onMouseClicked="#flipDragonCard" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@FaceDownDragonCard.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="dragonCard15" fitHeight="40.0" fitWidth="40.0" layoutX="140.0" layoutY="210.0" onMouseClicked="#flipDragonCard" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@FaceDownDragonCard.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="dragonCard16" fitHeight="40.0" fitWidth="40.0" layoutX="210.0" layoutY="210.0" onMouseClicked="#flipDragonCard" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@FaceDownDragonCard.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="dragonCard17" fitHeight="40.0" fitWidth="40.0" layoutX="70.0" layoutY="280.0" onMouseClicked="#flipDragonCard" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@FaceDownDragonCard.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="dragonCard18" fitHeight="40.0" fitWidth="40.0" layoutX="140.0" layoutY="280.0" onMouseClicked="#flipDragonCard" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@FaceDownDragonCard.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Group>
+      <Button layoutX="1126.0" layoutY="663.0" mnemonicParsing="false" onAction="#endTurn" text="End Turn">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button layoutX="711.0" layoutY="663.0" mnemonicParsing="false" onAction="#selectDragonCard" text="Select Dragon Card">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Rectangle fx:id="rectangle1" arcHeight="5.0" arcWidth="5.0" fill="LIGHTGRAY" height="64.0" layoutX="727.0" layoutY="45.0" stroke="BLACK" strokeType="INSIDE" width="504.0" />
+      <Rectangle fx:id="rectangle2" arcHeight="5.0" arcWidth="5.0" fill="LIGHTGRAY" height="64.0" layoutX="727.0" layoutY="109.0" stroke="BLACK" strokeType="INSIDE" width="504.0" />
+      <Rectangle fx:id="rectangle3" arcHeight="5.0" arcWidth="5.0" fill="LIGHTGRAY" height="64.0" layoutX="727.0" layoutY="173.0" stroke="BLACK" strokeType="INSIDE" width="504.0" />
+      <Rectangle fx:id="rectangle4" arcHeight="5.0" arcWidth="5.0" fill="LIGHTGRAY" height="64.0" layoutX="727.0" layoutY="237.0" stroke="BLACK" strokeType="INSIDE" width="504.0" />
+      <Circle fx:id="circle1" fill="#01ff00" layoutX="760.0" layoutY="80.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="circle2" fill="#ffd966" layoutX="760.0" layoutY="141.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="circle3" fill="WHITE" layoutX="760.0" layoutY="205.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="circle4" fill="#4a86e8" layoutX="760.0" layoutY="269.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
+      <Label fx:id="playerLabel1" layoutX="802.0" layoutY="58.0" text="PLAYER 1" textFill="RED">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Label fx:id="playerLabel2" layoutX="802.0" layoutY="119.0" text="PLAYER 2">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Label fx:id="playerLabel3" layoutX="802.0" layoutY="183.0" text="PLAYER 3">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Label fx:id="playerLabel4" layoutX="802.0" layoutY="247.0" text="PLAYER 4">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Label fx:id="tilesToWin4Display" layoutX="1024.0" layoutY="247.0" text="26">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Label fx:id="tilesToWin3Display" layoutX="1024.0" layoutY="183.0" text="26">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Label fx:id="tilesToWin2Display" layoutX="1024.0" layoutY="119.0" text="26">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Label fx:id="tilesToWin1Display" layoutX="1024.0" layoutY="58.0" text="26">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="animal4Display" fitHeight="57.0" fitWidth="57.0" layoutX="955.0" layoutY="241.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@BatPlayerDisplay.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="animal3Display" fitHeight="57.0" fitWidth="57.0" layoutX="955.0" layoutY="177.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@SalamanderPlayerDisplay.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="animal2Display" fitHeight="57.0" fitWidth="57.0" layoutX="955.0" layoutY="113.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@SpiderPlayerDisplay.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="animal1Display" fitHeight="57.0" fitWidth="57.0" layoutX="955.0" layoutY="48.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@BabyDragonPlayerDisplay.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="saveGameButton" layoutX="44.0" layoutY="7.0" mnemonicParsing="false" onAction="#saveGame" text="Save Game" />
+      <Button fx:id="loadGameButton" layoutX="163.0" layoutY="7.0" mnemonicParsing="false" onAction="#loadGame" text="Load Game" />
+      <Rectangle fx:id="curtainRectangle" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="666.0" layoutX="31.0" layoutY="37.0" stroke="BLACK" strokeType="INSIDE" width="1216.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.fit3077.fierydragons.BoardConfigController">
+   <children>
+      <Button fx:id="startGameButton" layoutX="982.0" layoutY="591.0" mnemonicParsing="false" onAction="#startGame" prefHeight="79.0" prefWidth="248.0" text="Start Game">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Button>
+      <Button fx:id="backGameButton" layoutX="50.0" layoutY="591.0" mnemonicParsing="false" onAction="#back" prefHeight="79.0" prefWidth="248.0" text="Back">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Button>
+      <Label layoutX="436.0" layoutY="43.0" text="BOARD CONFIGURATION">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="171.0" layoutY="148.0" text="Volcano Card Count">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="171.0" layoutY="201.0" text="Number of Volcano Tiles for each Volcano Card">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <TextField fx:id="volcanoCardCountTextField" layoutX="1029.0" layoutY="162.0" text="8" />
+      <TextField fx:id="volcanoTilesPerVolcanoCardCountTextField" layoutX="1029.0" layoutY="215.0" text="3,3,3,3,3,3,3,3" />
+      <Label layoutX="174.0" layoutY="420.0" text="Cave 1 Volcano Tile Index">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="174.0" layoutY="450.0" text="Cave 2 Volcano Tile Index">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="174.0" layoutY="480.0" text="Cave 3 Volcano Tile Index">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="174.0" layoutY="510.0" text="Cave 4 Volcano Tile Index">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="cave1VolcanoTileIndexTextField" layoutX="463.0" layoutY="425.0" prefHeight="25.0" prefWidth="56.0" text="1" />
+      <TextField fx:id="cave2VolcanoTileIndexTextField" layoutX="463.0" layoutY="455.0" prefHeight="25.0" prefWidth="56.0" text="1" />
+      <TextField fx:id="cave3VolcanoTileIndexTextField" layoutX="463.0" layoutY="483.0" prefHeight="25.0" prefWidth="56.0" text="1" />
+      <TextField fx:id="cave4VolcanoTileIndexTextField" layoutX="463.0" layoutY="516.0" prefHeight="25.0" prefWidth="56.0" text="1" />
+      <Label layoutX="422.0" layoutY="583.0" text="Player Count">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <TextField fx:id="playerCountTextField" layoutX="674.0" layoutY="597.0" prefHeight="25.0" prefWidth="56.0" text="4" />
+      <Label layoutX="730.0" layoutY="335.0" text="Cave 1 Animal">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="730.0" layoutY="388.0" text="Cave 2 Animal">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="730.0" layoutY="441.0" text="Cave 3 Animal">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="730.0" layoutY="494.0" text="Cave 4 Animal">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="174.0" layoutY="292.0" text="Cave 1 Volcano Card Index">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="174.0" layoutY="319.0" text="Cave 2 Volcano Card Index">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="174.0" layoutY="349.0" text="Cave 3 Volcano Card Index">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="174.0" layoutY="377.0" text="Cave 4 Volcano Card Index">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="cave1VolcanoCardIndexTextField" layoutX="463.0" layoutY="295.0" prefHeight="25.0" prefWidth="56.0" text="0" />
+      <TextField fx:id="cave2VolcanoCardIndexTextField" layoutX="463.0" layoutY="323.0" prefHeight="25.0" prefWidth="56.0" text="2" />
+      <TextField fx:id="cave3VolcanoCardIndexTextField" layoutX="462.0" layoutY="352.0" prefHeight="25.0" prefWidth="56.0" text="4" />
+      <TextField fx:id="cave4VolcanoCardIndexTextField" layoutX="462.0" layoutY="380.0" prefHeight="25.0" prefWidth="56.0" text="6" />
+      <ChoiceBox fx:id="cave1AnimalChoiceBox" layoutX="1007.0" layoutY="348.0" prefHeight="25.0" prefWidth="130.0" />
+      <ChoiceBox fx:id="cave2AnimalChoiceBox" layoutX="1007.0" layoutY="402.0" prefHeight="25.0" prefWidth="130.0" />
+      <ChoiceBox fx:id="cave3AnimalChoiceBox" layoutX="1007.0" layoutY="455.0" prefHeight="25.0" prefWidth="130.0" />
+      <ChoiceBox fx:id="cave4AnimalChoiceBox" layoutX="1007.0" layoutY="508.0" prefHeight="25.0" prefWidth="130.0" />
+   </children>
+</AnchorPane>
